@@ -1,5 +1,5 @@
 export const userColumns = [
-    {field:"id",headerName:"ID",width:70},
+    {field:"id",headerName:"ID",width:100},
     {
         field:"user",headerName:"User",width:230,renderCell:(params)=>{
             return(
@@ -11,13 +11,13 @@ export const userColumns = [
         }
     },
     {
-      field:"email",headerName:"Email",width:230
+      field:"email",headerName:"Email",width:330
     },
     {
-      field:"age",headerName:"Age",width:100
+      field:"age",headerName:"Age",width:200
     },
     {
-      field:"status",headerName:"Status",width:160,
+      field:"status",headerName:"Status",width:200,
       renderCell:(params)=>{
         return(
           <div className={`cellWithStatus ${params.row.status}`}>{params.row.status}</div>
